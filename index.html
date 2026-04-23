@@ -19,12 +19,14 @@
  	  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       
       <p>Before you go to the survey, you need to wait 1 minute so please use this time to read the introductory text<p></p>
-      <button onclick="window.location.href='redirect.html'">Go to survey!</button>
+      <button id="exit" onclick="window.location.href='redirect.html'" disabled>
+		Go to survey!
+      </button>
 
 <script>
         $(document).ready(function() {
           $("#exit").prop("disabled", true);
-	  setTimeout(function(){$("#exit").prop("disabled", false)}, 3000);
+	  setTimeout(function(){$("#exit").prop("disabled", false)}, 60000);
         });
       </script>
 </body>
